@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio | Designer & Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="./RE.png" alt="logo" width="100px" height="100px"><span class="logo-dot"></span></div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="welcome-text">Welcome to my portfolio</span>
+            <h1>Hi, I'm <span class="highlight">Bhavyansh Gahlot</span></h1>
+            <h2>Graphic Designer & Front-end Developer</h2>
+            <p>Creating beautiful digital experiences through design and code</p>
+            <div class="cta-group">
+                <a href="#portfolio" class="cta-button">View My Work</a>
+                <a href="#contact" class="cta-button secondary">Let's Talk</a>
+            </div>
+            <!-- <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p class="lead-text">I'm a passionate designer with over 3 years of experience in creating stuning designs whereas 1 year of experience in development.</p>
+                <p>My approach combines aesthetic excellence with technical precision to deliver memorable user experiences. I believe in the power of clean design and efficient code to solve complex problems and create delightful interactions.With a strong foundation in both graphic design and front-end development, I bridge the gap between creativity and functionality.</p>
+                <div class="skills">
+                    <h3>Expertise</h3>
+                    <div class="skill-tags">
+                        <span><i class="fas fa-palette"></i>Adobe photoshop </span>
+                        <span><i class="fab fa-html5"></i> HTML</span>
+                        <span><i class="fab fa-css3-alt"></i> CSS</span>
+                        <span><i class="fab fa-js"></i> JavaScript</span>
+                        <span><i class="fab fa-adobe"></i> Adobe Illustrator</span>
+                        <span><i class="fas fa-bezier-curve"></i> Logo Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2 class="section-title">Work</h2>
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+        </div>
+        <div class="slideshow-container">
+            <div class="slides-wrapper">
+                <div class="slide">
+                    <img src="./1.jpg" alt="Portfolio Item 1">
+                    <div class="slide-info">
+                        <h3>Logo Design for Gym</h3>
+                        <p>Branding</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./RE.png" alt="Portfolio Item 2">
+                    <div class="slide-info">
+                        <h3>Personalized logo design</h3>
+                        <p>Branding</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./1.png" alt="Portfolio Item 3">
+                    <div class="slide-info">
+                        <h3>Club poster design</h3>
+                        <p>Highlighting the club's events</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./2.png" alt="Portfolio Item 4">
+                    <div class="slide-info">
+                        <h3>Creative story</h3>
+                        
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./3.png" alt="Portfolio Item 5">
+                    <div class="slide-info">
+                        <h3>Entry-pass Design </h3>
+                        <p>Branding</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./4.png" alt="Portfolio Item 6">
+                    <div class="slide-info">
+                        <h3>Creative Design </h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./5.jpg" alt="Portfolio Item 7">
+                    <div class="slide-info">
+                        <h3>Creative design</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./6.png" alt="Portfolio Item 8">
+                    <div class="slide-info">
+                        <h3>Creative post</h3>
+                        <p>For upcomimg event</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./7.png" alt="Portfolio Item 9">
+                    <div class="slide-info">
+                        <h3>Creative story</h3>
+                        <p>Highlighting upcoming events</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./15june3.png" alt="Portfolio Item 10">
+                    <div class="slide-info">
+                        <h3>Creative story</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <button class="slide-nav prev" aria-label="Previous slide">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slide-nav next" aria-label="Next slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="slide-dots">
+                <!-- Dots will be dynamically added via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Showcase Section -->
+    <section id="website-showcase" class="website-showcase">
+        <h2 class="section-title">My Website</h2>
+        <div class="website-container">
+            <div class="website-content">
+                <h3>Gahlot Event Planner</h3>
+                <p class="website-tagline">"Making your dream event a reality"</p>
+                <p class="website-description">
+                    Professional event planning services for all occasions. Specializing in college fests, concerts, 
+                    corporate events, and special celebrations. Creating memorable experiences with meticulous attention to detail.
+                </p>
+                <div class="website-features">
+                    <div class="feature">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Event Planning</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <span>Team Coordination</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-star"></i>
+                        <span>Creative Solutions</span>
+                    </div>
+                </div>
+                <a href="https://bhavyanshgahlot-hub.github.io/" target="_blank" class="website-cta">
+                    <span>Visit Website</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+            <div class="website-preview">
+                <div class="browser-mockup">
+                    <div class="browser-buttons">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="browser-content">
+                        <iframe src="https://bhavyanshgahlot-hub.github.io/" title="Gahlot Event Planner Website"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Let's Create Something Together</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>gahlotbhavyansh@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 8302362048</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bikaner&Jaipur, Rajasthan, INDIA</span>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/bhavyansh-gahlot-96b337330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://bhavyanshgahlot-hub.github.io/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/BhavyanshG95689?t=kjiY6KpCCHHcKGuV-qehaQ&s=08" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        
+        <div class="footer-content">
+            <div class="footer-logo"><img src="./RE.png" alt="logo" width="100px" height="100px"><span class="logo-dot"></span></div>
+            <p>Creating digital experiences that make a difference</p>
+            <p class="copyright">&copy; 2025 Bhavyansh . All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
